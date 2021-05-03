@@ -1,12 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
 
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 .Calculator {
+  /* padding: 0px;
+  margin: -10px; */
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  /* max-height: 100vh; */
+  /* max-width: 100vw; */
   background: linear-gradient(45deg, rgb(58, 58, 58) 5%, rgb(149, 149, 149) 100%);
 }
 
@@ -80,10 +93,15 @@
   margin: 2px;
 }
 
+button:active, .NumbersRow > button:active, .Operators > button:active {
+  background: linear-gradient(45deg, rgb(46, 46, 46) 5%, rgb(112, 112, 112) 100%);
+}
+
+
 button {
   width: 50%;
   height: 100%;
-  background: linear-gradient(45deg, rgb(0, 0, 0) 5%, rgb(29, 29, 29) 100%);
+  background: linear-gradient(45deg, rgb(0, 0, 0) 5%, rgb(8, 8, 8) 100%);
   margin: 2px;
   border: none;
   font-size: xx-large;
@@ -95,7 +113,7 @@ button {
 .NumbersRow > button {
   width: 50%;
   height: 100%;
-  background: linear-gradient(45deg, rgb(0, 0, 0) 5%, rgb(29, 29, 29) 100%);
+  background: linear-gradient(45deg, rgb(0, 0, 0) 5%, rgb(34, 34, 34) 100%);
   margin: 2px;
   border: none;
   font-size: xx-large;
